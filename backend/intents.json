@@ -1,0 +1,140 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hey", "Hello", "Good day", "Greetings"],
+        "responses": [
+          "Hi there! It's nice to see you. How are you feeling today?",
+          "Hello! How can I support you today? Let me know how you're doing.",
+          "Good day! How's everything going for you? What can I assist you with?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you", "Till next time"],
+        "responses": [
+          "Goodbye! Take care and remember, I'm here whenever you need support.",
+          "See you later! Have a wonderful day, and don’t hesitate to reach out if you need anything.",
+          "Bye for now! I’m here if you ever need someone to talk to. Take care!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+        "responses": [
+          "You’re very welcome! I'm glad I could assist you.",
+          "It was my pleasure to help. If you need anything else, just let me know!",
+          "I’m happy you found it helpful. Don’t hesitate to reach out again!"
+        ]
+      },
+      {
+        "tag": "depression",
+        "patterns": ["I am feeling depressed", "I'm so sad", "I feel hopeless", "I can't see any future"],
+        "responses": [
+          "I’m really sorry to hear you’re feeling this way. Depression can be overwhelming, but there’s help available. Would you like me to provide some resources for therapy or support?",
+          "It’s important to know that you’re not alone in this. Depression is a serious condition, but there are effective treatments and support available. Would you like information on talking to a professional?",
+          "I understand that things might feel tough right now. If you’re open to it, I can offer some resources for mental health support or just listen if you want to talk."
+        ]
+      },
+      {
+        "tag": "anxiety",
+        "patterns": ["I'm feeling anxious", "I can't stop worrying", "I'm having panic attacks", "Everything makes me nervous"],
+        "responses": [
+          "I’m sorry you’re feeling anxious. It can be really challenging, but there are strategies that might help. Would you like to try a breathing exercise or learn more about managing anxiety?",
+          "Anxiety can be difficult to deal with, but there are effective techniques for calming your mind. Would you like some suggestions or a specific exercise to try?",
+          "I understand that anxiety can feel overwhelming. If you’re interested, I can guide you through a relaxation exercise or offer some tips for managing anxiety."
+        ]
+      },
+      {
+        "tag": "stress",
+        "patterns": ["I'm so stressed", "Everything is too much", "I can't handle the pressure", "I'm burning out"],
+        "responses": [
+          "I’m sorry you’re feeling stressed. Stress can be really hard to handle. Would you like some suggestions for quick stress-relief exercises or techniques to help you unwind?",
+          "It sounds like you’re under a lot of pressure. If you’d like, I can suggest some relaxation exercises or stress management tips.",
+          "Managing stress is important for your well-being. Would you like me to share some effective stress-relief techniques or discuss ways to manage your stress?"
+        ]
+      },
+      {
+        "tag": "self_harm",
+        "patterns": ["I want to hurt myself", "I'm thinking of self-harm", "I've been cutting myself", "I don't want to live anymore"],
+        "responses": [
+          "I’m deeply concerned about what you’re going through. Please reach out to a crisis hotline or seek immediate support from friends, family, or professionals. Your well-being is very important.",
+          "It sounds like you’re in a lot of pain right now. Please consider talking to a mental health professional or contacting a crisis helpline for support. You don’t have to face this alone.",
+          "I’m really sorry you're feeling this way. It’s crucial to talk to someone who can provide support right away. I can provide you with emergency contact numbers if you’d like."
+        ]
+      },
+      {
+        "tag": "loneliness",
+        "patterns": ["I feel so lonely", "I don't have anyone to talk to", "I'm feeling isolated", "I wish I had someone to be with"],
+        "responses": [
+          "I’m sorry you’re feeling lonely. It’s important to connect with others. Would you like some suggestions for reaching out to friends or joining a community group?",
+          "Loneliness can be tough to deal with. If you’re interested, I can suggest some activities or resources that might help you connect with others.",
+          "Feeling isolated can be very challenging. If you want, I can offer some ideas for ways to engage with new people or find support."
+        ]
+      },
+      {
+        "tag": "anger",
+        "patterns": ["I'm so angry", "Everything makes me mad", "I can't control my anger", "I'm frustrated"],
+        "responses": [
+          "I’m sorry you’re feeling so angry. Anger can be a powerful emotion. Would you like some tips for managing anger or a relaxation exercise to help you calm down?",
+          "It sounds like you’re dealing with a lot of frustration right now. If you’d like, I can suggest some techniques to help you manage your anger.",
+          "Managing anger is important for your well-being. Would you like to try a calming exercise or discuss strategies to help you handle your anger better?"
+        ]
+      },
+      {
+        "tag": "sadness",
+        "patterns": ["I'm feeling sad", "I'm down", "I'm having a bad day", "I feel blue"],
+        "responses": [
+          "I’m sorry you’re feeling sad. It’s okay to have tough days. If you’d like, I can share some uplifting quotes or tips for improving your mood.",
+          "Sadness can be a heavy feeling. If you want, I can offer some suggestions for activities that might help lift your spirits.",
+          "It’s important to take care of yourself when you’re feeling down. Would you like to try some mood-boosting exercises or talk about what’s on your mind?"
+        ]
+      },
+      {
+        "tag": "motivation",
+        "patterns": ["I need motivation", "I'm feeling unmotivated", "I lack drive", "I need some encouragement"],
+        "responses": [
+          "Feeling unmotivated can be tough. How about a motivational quote or a tip to help boost your drive? I’m here to support you.",
+          "It’s normal to need a boost sometimes. If you’d like, I can share some encouragement or suggest ways to get back on track.",
+          "Let’s find some inspiration together. I can offer a motivational quote or some tips to help you regain your motivation."
+        ]
+      },
+      {
+        "tag": "self_care",
+        "patterns": ["I need self-care", "How can I take care of myself?", "I feel like I need a break", "I want to practice self-care"],
+        "responses": [
+          "Self-care is important for maintaining your well-being. Would you like some ideas for self-care activities or relaxation techniques?",
+          "Taking time for yourself can make a big difference. If you’re interested, I can suggest some self-care practices or tips for unwinding.",
+          "It’s great that you’re thinking about self-care. Let me provide you with some ideas and techniques to help you feel better."
+        ]
+      },
+      {
+        "tag": "gratitude",
+        "patterns": ["I want to focus on gratitude", "I need to be thankful", "How can I practice gratitude?", "I'm trying to be more grateful"],
+        "responses": [
+          "Focusing on gratitude can be really uplifting. Would you like some tips on practicing gratitude or a gratitude exercise to get started?",
+          "Practicing gratitude can help shift your perspective. If you’re interested, I can offer some ideas for expressing gratitude in your daily life.",
+          "Gratitude is a powerful tool for positivity. Let me share some tips and exercises that might help you cultivate a more grateful mindset."
+        ]
+      },
+      {
+        "tag": "relationship",
+        "patterns": ["I’m having relationship issues", "I need advice on my relationship", "I’m struggling with my partner", "Can you help with relationship problems?"],
+        "responses": [
+          "Relationship issues can be challenging. If you’d like, I can offer some general advice or suggest ways to communicate more effectively with your partner.",
+          "It’s important to address relationship concerns. Would you like some tips for improving communication or strategies for resolving conflicts?",
+          "Navigating relationship problems can be tough. If you’re open to it, I can provide some advice or resources that might help you work through the issues."
+        ]
+      },
+      {
+        "tag": "work",
+        "patterns": ["I'm stressed about work", "I need help with work-related stress", "Work is overwhelming", "I can't manage my workload"],
+        "responses": [
+          "Work-related stress can be tough to handle. If you’d like, I can offer some stress management techniques or tips for balancing your workload.",
+          "Feeling overwhelmed at work is common. How about some suggestions for managing your tasks or finding ways to reduce stress?",
+          "Managing work stress is important for your well-being. If you need it, I can provide some strategies or resources to help you cope better."
+        ]
+      }
+    ]
+  }
+  
