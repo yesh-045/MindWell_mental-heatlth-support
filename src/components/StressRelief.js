@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
-import DeepBreathingImage from '../components/imgs/Group 958.png';  // Importing the specific image for Deep Breathing
-import MindfulnessMeditationImage from '../components/imgs/40066-girl-yoga.svg';  // Importing the specific image for Mindfulness Meditation
-import ProgressiveMuscleRelaxationImage from '../components/imgs/fineoffinal.jpg';  // Importing the new image for Progressive Muscle Relaxation
-
+import { useNavigate } from 'react-router-dom'; 
+import DeepBreathingImage from '../components/imgs/Group 958.png'; 
+import MindfulnessMeditationImage from '../components/imgs/40066-girl-yoga.svg';  
+import ProgressiveMuscleRelaxationImage from '../components/imgs/fineoffinal.jpg'; 
 const StressRelief = () => {
     const [selectedExercise, setSelectedExercise] = useState(null);
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate();
 
     const exercises = [
         { id: 1, name: "Deep Breathing", description: "Practice deep breathing for 5 minutes.", image: DeepBreathingImage },

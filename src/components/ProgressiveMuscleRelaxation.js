@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ChildsPoseImage from '../components/imgs/childs-pose.jpg';  // Import the image for Child’s Pose
-import NeckStretchImage from '../components/imgs/neck-stretch.jpg'; // Import the image for Rotational Neck Stretch
+import ChildsPoseImage from '../components/imgs/childs-pose.jpg';  
+import NeckStretchImage from '../components/imgs/neck-stretch.jpg';
 
 const exercises = [
     {

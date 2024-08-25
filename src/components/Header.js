@@ -21,12 +21,12 @@ const Header = () => {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setAnimate(true); // Trigger animation
+            setAnimate(true); 
             setTimeout(() => {
                 setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % motivationalQuotes.length);
-                setAnimate(false); // Reset animation state
-            }, 1000); // Animation duration
-        }, 4000); // Change quote every 4 seconds
+                setAnimate(false); 
+            }, 1000); 
+        }, 4000); 
 
         return () => clearInterval(intervalId);
     }, []);

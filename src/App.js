@@ -18,17 +18,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* Include the Home component with navigation buttons */}
+       
         <Home />  
         
-        {/* Include the Header component right after the Home component */}
         <Header />
 
-        {/* Define the routes for the application */}
         <Routes>
           <Route path="/" element={
             <>
-              {/* Games, Activities, and Counselling will show under Header */}
+              
               <Games />
               <Activities />
               <Counselling />
@@ -42,7 +40,7 @@ function App() {
           <Route path="/guided-breathing-game" element={<GuidedBreathingGame />} />
         </Routes>
         
-        {/* Include the Footer at the bottom of the page */}
+    
         <Footer />
       </div>
     </Router>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const PositiveWordPuzzle = () => {
     const positiveWords = [
@@ -25,7 +25,7 @@ const PositiveWordPuzzle = () => {
     const [userWord, setUserWord] = useState('');
     const [result, setResult] = useState('');
 
-    const navigate = useNavigate(); // Use the navigate hook
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         startPuzzle();

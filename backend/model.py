@@ -4,8 +4,8 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 from resources import mental_health_resources, stress_relief_exercises
 
 # Load models and tokenizers
-distilbert_tokenizer = DistilBertTokenizer.from_pretrained('C:\\Users\\yeshp\\Desktop\\MentalHealthSupport\\backend\\fine-tuned-distilbert')
-distilbert_model = DistilBertForSequenceClassification.from_pretrained('C:\\Users\\yeshp\\Desktop\\MentalHealthSupport\\backend\\fine-tuned-distilbert')
+distilbert_tokenizer = DistilBertTokenizer.from_pretrained('C:\\Users\\yeshp\\Desktop\\MentalHealthBot\\fine-tuned-distilbert')
+distilbert_model = DistilBertForSequenceClassification.from_pretrained('C:\\Users\\yeshp\\Desktop\\MentalHealthBot\\fine-tuned-distilbert')
 mental_health_classifier = pipeline('text-classification', model=distilbert_model, tokenizer=distilbert_tokenizer)
 
 blenderbot_tokenizer = AutoTokenizer.from_pretrained("facebook/blenderbot-400M-distill")
@@ -164,13 +164,13 @@ def provide_mental_health_resources(mental_health_state):
 def enhance_response(response, context):
     enhanced_response = response
     
-    if random.random() < 0.5:  # 50% chance to add a quote
+    if random.random() < 0.5: 
         quote = get_motivational_quote()
         if quote not in context["quotes_given"]:
             enhanced_response += f"\n\nHere's a thought for you: {quote}"
             context["quotes_given"].append(quote)
 
-    if random.random() < 0.5:  # 50% chance to add a wellness tip
+    if random.random() < 0.5:
         tip = get_wellness_tip()
         enhanced_response += f"\n\nWellness tip: {tip}"
 
@@ -187,7 +187,7 @@ def get_wellness_tip():
     return random.choice(tips)
 
 
-first_interaction = True  # Flag to track the first interaction
+first_interaction = True 
 
 def process_user_input(user_input):
     global first_interaction, context_manager

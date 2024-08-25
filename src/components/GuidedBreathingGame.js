@@ -31,7 +31,7 @@ const GuidedBreathingGame = () => {
                 inhaleTextRef.current.classList.remove('show');
                 exhaleTextRef.current.classList.remove('show');
                 setIsBreathing(false);
-                setCycleCount(0);  // Reset cycle count for next start
+                setCycleCount(0);  
                 return;
             }
 
@@ -66,13 +66,13 @@ const GuidedBreathingGame = () => {
         } else {
             clearTimeout(inhaleTimeout);
             clearTimeout(exhaleTimeout);
-            window.speechSynthesis.cancel(); // Stop any ongoing speech
+            window.speechSynthesis.cancel();
         }
 
         return () => {
             clearTimeout(inhaleTimeout);
             clearTimeout(exhaleTimeout);
-            window.speechSynthesis.cancel(); // Stop any ongoing speech
+            window.speechSynthesis.cancel(); 
         };
     }, [isBreathing, isExpanding, cycleCount]);
 
@@ -87,14 +87,14 @@ const GuidedBreathingGame = () => {
 
     const stopBreathing = () => {
         setIsBreathing(false);
-        window.speechSynthesis.cancel(); // Stop any ongoing speech
+        window.speechSynthesis.cancel();
         instructionsRef.current.innerHTML = "Breathing exercise stopped.";
         inhaleTextRef.current.classList.remove('show');
         exhaleTextRef.current.classList.remove('show');
     };
 
     const handleClose = () => {
-        navigate('/'); // Redirect to the home page
+        navigate('/'); 
     };
 
     return (
@@ -141,7 +141,7 @@ const GuidedBreathingGame = () => {
                 </div>
                 <button
                     className="bg-blue-500 text-white py-2 px-4 rounded-lg"
-                    onClick={handleClose} // Close and navigate to home
+                    onClick={handleClose} 
                 >
                     Close
                 </button>

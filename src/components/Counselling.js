@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for routing
+import { Link } from 'react-router-dom'; 
 import group1 from "./imgs/Group 948.svg";
 import group2 from "./imgs/Group 949.svg";
 import group3 from "./imgs/Group 950.svg";
@@ -19,7 +19,7 @@ const Counselling = () => {
                     <img className='w-[320px] h-72 absolute mt-20' src={logo} alt="Logo" />
                     <div className="w-[300px] mt-60 absolute mx-80 pl-10">
                         <h1 className='text-2xl mb-4'>Chat With Our Mental Health Bot</h1>
-                        <Link to="/chatbot"> {/* Link to the ChatbotPage */}
+                        <Link to="/chatbot">
                             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                 Start Chat
                             </button>

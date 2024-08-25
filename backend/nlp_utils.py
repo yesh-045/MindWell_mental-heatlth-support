@@ -38,7 +38,6 @@ def get_motivational_content(emotion):
     tip = random.choice(wellness_tips)
     return f"Here's a thought for you: {quote}\n\nWellness tip: {tip}"
 
-# Dialogue Manager for improved conversation flow
 class DialogueManager:
     def __init__(self):
         self.context = {}
